@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
-const ExploreScreen = () => {
+const ShopScreen = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Explore Screen</Text>
-            <Image source={{uri: 'https://www.rochesterfirst.com/wp-content/uploads/sites/66/2023/03/download-3143.jpg?strip=1'}} />
+            <Text style={styles.title}>Shop Screen</Text>
+            <Image source={{uri: 'https://bearswire.usatoday.com/wp-content/uploads/sites/63/2019/01/usatsi_11955506.jpg?w=1000&h=600&crop=1'}} />
         </View>
     );
 };
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ExploreScreen;
+export default ShopScreen;

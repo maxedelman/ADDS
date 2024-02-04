@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import styles from '../../utils/styles';
 import AdOption from '../organisms/AdOption';
 
-const HomeScreen = () => {
+const EarnScreen = () => {
     return (
         <View style={styles.screenContainer}>
             <AdOption icon={require('../../assets/favicon.png')} name="Google" length='15s' money='$5'/>
@@ -12,4 +12,4 @@ const HomeScreen = () => {
 };
 
 
-export default HomeScreen;
+export default EarnScreen;

@@ -2,16 +2,16 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import HomeScreen from './components/templates/HomeScreen.js';
-import ExploreScreen from './components/templates/ExploreScreen.js';
-import ProfileScreen from './components/templates/ProfileScreen.js';
+import HomeScreen from './components/templates/EarnScreen.js';
+import WalletScreen from './components/templates/WalletScreen.js';
+import ShopScreen from './components/templates/ShopScreen.js';
 
 const Tab = createBottomTabNavigator();
 
 const AppNavigator = () => {
   return (
     <Tab.Navigator
-    initialRouteName="Home"  // Specify the initial screen
+    initialRouteName="Earn"  // Specify the initial screen
     screenOptions={{
       activeTintColor: 'blue',
       inactiveTintColor: 'gray',
@@ -21,9 +21,9 @@ const AppNavigator = () => {
       },
     }}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Explore" component={ExploreScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="Earn" component={HomeScreen} />
+      <Tab.Screen name="Wallet" component={WalletScreen} />
+      <Tab.Screen name="Shop" component={ShopScreen} />
     </Tab.Navigator>
   );
 };
